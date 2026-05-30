@@ -731,16 +731,16 @@ body { cursor: none; }
 }
 
 @media (max-width: 640px) {
-  .hero { overflow-y: auto; min-height: 100vh; }
-  .display { font-size: 48px; top: 60px; left: 16px; right: 16px; }
-  .display-sub { font-size: 16px; top: 112px; left: 16px; right: 16px; max-width: 100%; }
+  .hero { overflow-y: auto; min-height: 100vh; display: flex; flex-direction: column; padding: 0 16px; }
+  .display { position: relative; top: auto; left: auto; right: auto; font-size: 48px; margin-top: 70px; pointer-events: auto; }
+  .display-sub { position: relative; top: auto; left: auto; right: auto; font-size: 16px; max-width: 100%; margin-top: 8px; }
   .photo-wrap { display: none; }
-  .vid-reel { bottom: auto; top: 180px; left: 16px; width: auto; right: 16px; max-width: none; }
+  .vid-reel { position: relative; bottom: auto; top: auto; left: auto; width: 100%; max-width: 100%; margin-top: 24px; }
   .vid-btn { width: 40px; height: 40px; font-size: 18px; }
   .vid-btn.prev { left: 4px; }
   .vid-btn.next { right: 4px; }
   .vid-counter { font-size: 16px; }
-  .info { position: relative; left: auto; right: auto; bottom: auto; margin: 320px 16px 20px; flex-wrap: wrap; }
+  .info { position: relative; left: auto; right: auto; bottom: auto; margin-top: 24px; flex-wrap: wrap; }
   .col-l, .col-r { flex: 0 0 100%; text-align: left; }
   .col-r { text-align: left; margin-top: 20px; }
   .col-c { width: 100%; order: -1; justify-content: flex-start; margin-bottom: 10px; }
@@ -749,6 +749,7 @@ body { cursor: none; }
   .thumbs-btn.prev { left: 4px; }
   .thumbs-btn.next { right: 4px; }
   .thumbs-counter { font-size: 16px; }
+  .nav { padding: 14px 16px; }
   body { cursor: auto; }
   .c-cursor { display: none; }
 }
